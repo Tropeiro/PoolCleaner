@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7787EF"
+    android:background="@color/cortelas"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/comfortaa"
         android:text="Seu assistente de limpeza de piscinas"
-        android:textColor="#FFFCFC"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/comfortaa"
         android:text="Bem-vindo ao Pool Cleaner"
-        android:textColor="#FFFCFC"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

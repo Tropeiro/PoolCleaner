@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Você precisa escrever sua própria classe que se estende RecyclerView.OnItemTouchListener .
  */
 
-class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
+public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
 
     private OnItemClickListener mListener;
     GestureDetector mGestureDetector;

@@ -24,9 +24,9 @@ public class AjudaAdapter extends RecyclerView.Adapter<AjudaAdapter.MyViewHolder
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View listaAjudas = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_main, parent, false);
+        View itemAjuda = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_main, parent, false);
 
-        return new MyViewHolder(listaAjudas);
+        return new MyViewHolder(itemAjuda);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class AjudaAdapter extends RecyclerView.Adapter<AjudaAdapter.MyViewHolder
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listaAjudas.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
