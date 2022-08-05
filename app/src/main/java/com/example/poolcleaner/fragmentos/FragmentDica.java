@@ -27,7 +27,6 @@ public class FragmentDica extends Fragment {
         Bundle bundle = getArguments();
         if(bundle != null){
             int id = getArguments().getInt("position", 0);
-            Toast.makeText(getContext(), "id =" + id, Toast.LENGTH_SHORT).show();
             switch(id){
                 case 0:
                     txtTituloDica.setText("Equipamento recomendado:");
@@ -57,10 +56,24 @@ public class FragmentDica extends Fragment {
                     txtTextoDica.setText(saida);
                     break;
                 case 3:
-                    txtTituloDica.setText("Coloração da água");
+                    txtTituloDica.setText("Coloração da água:");
                     saida = "Caso após o tratamento realizado a água estiver verde, você precisará de um 'algicida de choque', siga as instruções da embalagem para o uso.\n" +
                             "Se a água estiver com aparência 'turva' (difícil de enxergar o fundo da piscina), pode ser que seja necessário a realização de uma nova limpeza, aguarde aproximadamente três dias para uma nova limpeza.";
-
+                    txtTextoDica.setText(saida);
+                    break;
+                case 4:
+                    txtTituloDica.setText("Tempo recomendado de ação do produto:");
+                    saida = "O tempo recomendado de ação dos produtos químicos é de 24 a 48 horas, quanto maior o tempo de ação, melhores serão os resultados.";
+                    txtTextoDica.setText(saida);
+                    break;
+                case 5:
+                    txtTituloDica.setText("Manutenção:");
+                    saida = "Em caso de a piscina não se encontrar muito suja, a quantidade utilizada para manutenção será metade do valor que se utilizaria em uma limpeza normal.";
+                    txtTextoDica.setText(saida);
+                    break;
+                case 6:
+                    txtTituloDica.setText("Em caso de emergência:");
+                    saida = "Normalmente, os produtos não são tão agressivos contra a pele e sistema respiratório, porém ainda podem causar leves irritações, se entrar em contato com a pele, limpe com água corrente. Não inale ou ingira os produtos. Caso o produto entre em contato com os olhos, contacte um médico o mais rápido possível.";
             }
         }
 

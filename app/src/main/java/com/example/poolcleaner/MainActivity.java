@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder atencao = new AlertDialog.Builder(MainActivity.this);
                 atencao.setTitle("Atenção!");
                 atencao.setMessage("O uso de produtos químicos pode ser prejudicial à saúde, principalmente quando em contato com a pele." +
-                        " É recomendável o uso de equipamentos adequados antes do manuseio destes produtos (luvas, óculos e máscara).");
+                        "\n\nÉ recomendável o uso de equipamentos adequados antes do manuseio destes produtos (luvas, óculos e máscara).\n" +
+                        "\nNão entre na piscina enquanto os produtos estiverem agindo.");
                 atencao.setIcon(R.drawable.warning);
                 atencao.setNeutralButton("Entendido", new DialogInterface.OnClickListener() {
                     @Override

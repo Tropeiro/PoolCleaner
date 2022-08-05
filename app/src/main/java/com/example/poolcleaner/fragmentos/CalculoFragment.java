@@ -47,7 +47,7 @@ public class CalculoFragment extends Fragment {
                     double qntCloro = (litros / 1000) * 4;
 
                     String saida = String.format("Para uma piscina com capacidade para %.0f litros:\n\n" +
-                            "Adicione:\n" + "- %.1f gramas de Sulfato de alumínio;\n- %.1f gramas de Barrilha;\n- %.1f gramas de Cloro;", litros, qntSulfato, qntBarrilha, qntCloro);
+                            "Adicione:\n" + "- %.1f gramas de Sulfato de alumínio (%.1f gramas para manutenção);\n- %.1f gramas de Barrilha (%.1f gramas para manutenção);\n- %.1f gramas de Cloro (%.1f gramas para manutenção);", litros, qntSulfato, qntSulfato/2, qntBarrilha, qntBarrilha/2, qntCloro, qntCloro/2);
                     txtInstrucoes.setText(saida);
                     edtLitragem.setText("");
                 }
